@@ -115,6 +115,7 @@ int main(int argc, const char * argv[]) {
     }
     
     //Test 10: Add two enums together
+    /*
     try {
         BigCat Liger = Lion + Tiger;
        
@@ -123,7 +124,7 @@ int main(int argc, const char * argv[]) {
     {
         std::cout << e.what();
     }
-    
+    */
     //explicit cast in to animal
     try
     {
