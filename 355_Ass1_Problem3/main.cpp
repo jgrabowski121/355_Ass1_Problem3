@@ -147,5 +147,18 @@ int main(int argc, const char * argv[]) {
         std::cout << e.what();
     }
     
+    //boolean test
+    try
+    {
+        animal bingo = Dog;
+        bool test = (bingo > Sunday); // this is allowed
+                                      // gives a warning
+    }
+    catch (std::exception& e)
+    {
+        std::cout << e.what();
+    }
+    
+    
     return 0;
 }
