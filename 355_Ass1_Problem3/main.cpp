@@ -17,20 +17,18 @@ int main(int argc, const char * argv[]) {
     enum animal {Ardvark, Bat, Cat, Dog, Elephant};
     
     //Test 1: two enum types with the same defined constant
-    // enum feline {Lion, Bobcat, Tiger, Cat }; // Not allowed
+    enum feline {Lion, Bobcat, Tiger, Cat }; // Not allowed
     enum BigCat {Lion, Bobcat, Tiger};
     
     
     
     //Test 2: Add a Dog to a Sunday
-    /*
     try {
         day M = Monday;
         M = Ardvark; // Should fail
     } catch (std::exception& e) {
         std::cout << e.what();
     }
-    */
     
     //Test 3: Assign an enum to an iteger
     try
@@ -44,7 +42,6 @@ int main(int argc, const char * argv[]) {
     }
     
     //Test 4: Increment an enum
-    /*
     try {
         day M = Monday;
         M++;
@@ -53,7 +50,6 @@ int main(int argc, const char * argv[]) {
     {
         std::cout << e.what();
     }
-    */
     
     //Test 5: Assign an enum to a double (coerce it)
     try {
@@ -66,7 +62,6 @@ int main(int argc, const char * argv[]) {
     }
     
     //Test 6: Assign an int to an enum
-    /*
     try {
         day M = Monday;
         M = 4;
@@ -75,8 +70,6 @@ int main(int argc, const char * argv[]) {
     {
         std::cout << e.what();
     }
-    */
-    
     
     //Test 7: Perform division on an enum
     try {
@@ -89,33 +82,16 @@ int main(int argc, const char * argv[]) {
     }
     
     //Test 8: Define an enum and int of the same name
-    /*
     try {
         day M = Monday;
         int M = 10;
-        
-        M++;
     }
     catch (std::exception& e)
     {
         std::cout << e.what();
     }
     
-    */
-    
-    //Test 9: Double coerced into an enum
-    // Assign an enum to a double (coerce it)
-    try {
-        double d = 10.5;
-        d = Bat; // This is allowed
-    }
-    catch (std::exception& e)
-    {
-        std::cout << e.what();
-    }
-    
-    //Test 10: Add two enums together
-    /*
+    //Test 9: Add two enums together
     try {
         BigCat Liger = Lion + Tiger;
        
@@ -124,8 +100,8 @@ int main(int argc, const char * argv[]) {
     {
         std::cout << e.what();
     }
-    */
-    //explicit cast in to animal
+    
+    //Test 10: explicit cast in to animal
     try
     {
         int myInt = 4;
@@ -136,7 +112,7 @@ int main(int argc, const char * argv[]) {
         std::cout << e.what();
     }
     
-    //add animal to int
+    //Test 11: add animal to int
     try
     {
         animal bingo = Dog;
@@ -147,7 +123,7 @@ int main(int argc, const char * argv[]) {
         std::cout << e.what();
     }
     
-    //boolean test
+    //Test 12: boolean test
     try
     {
         animal bingo = Dog;
