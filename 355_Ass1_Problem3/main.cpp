@@ -1,9 +1,12 @@
 //
-//  main.cpp
-//  355_Ass1_Problem3
-//
-//  Created by Justin Grabowski on 11/16/18.
-//  Copyright © 2018 Justin Grabowski. All rights reserved.
+// Justin Grabowski
+// CS355
+// Fall 2018
+// November 10th 2018
+// Instructor Ganchev G.
+// main.cpp
+// CS355Ass1_Problem3
+// Language C++
 //
 // This file tests the safety of the enum type in c++
 //  enums can usuallly be coeced into integers
