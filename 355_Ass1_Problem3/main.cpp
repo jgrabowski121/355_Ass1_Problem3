@@ -9,7 +9,6 @@
 // Language C++
 //
 // This file tests the safety of the enum type in c++
-//  enums can usuallly be coeced into integers
 
 #include <iostream>
 
